@@ -8,7 +8,7 @@ body {
     margin: 0px;
     height: 100%;
 }
-/* a blue color as a generic focus style */
+
 button:focus-visible {
     outline: 2px solid #4a90e2 !important;
     outline: -webkit-focus-ring-color auto 5px !important;
@@ -21,7 +21,7 @@ a {
   max-width: 100%;
   margin: 0 auto;
   position: relative;
-/* chống lệch do phần tử absolute vượt khung */
+
 }
 
 
@@ -32,7 +32,7 @@ a {
     position: relative;
 }
 
-/* ===== LEFT CARD ===== */
+
 
 .section-featured .feature-left {
     position: absolute;
@@ -51,7 +51,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
     
-    width: 670px;      /* nhỏ lại */
+    width: 670px;      
     height: auto;
 
     object-fit: contain;
@@ -97,7 +97,7 @@ letter-spacing: -10.50px;
 line-height: 24px;
 }
 
-/* ===== RIGHT TOP CARD ===== */
+
 
 .section-featured .feature {
     position: absolute;
@@ -124,7 +124,7 @@ font-family: "Poppins-Medium", Helvetica;
     color: #111;
 }
 
-/* Feature Items */
+
 
 .section-featured .group,
 .section-featured .group-2,
@@ -154,7 +154,6 @@ font-family: "Poppins-Medium", Helvetica;
     line-height: 1.4;
 }
 
-/* Vertical lines */
 
 .section-featured .line,
 .section-featured .img {
@@ -168,7 +167,6 @@ font-family: "Poppins-Medium", Helvetica;
 .section-featured .line { left: 290px; }
 .section-featured .img { left: 500px; }
 
-/* ===== RIGHT BOTTOM IMAGE ===== */
 
 .section-featured .collection {
     position: absolute;
@@ -186,7 +184,7 @@ font-family: "Poppins-Medium", Helvetica;
     object-fit: cover;
 }
 
-/* Button overlay */
+
 
 .section-featured .button-inverse-wrapper {
     position: absolute;
@@ -213,7 +211,7 @@ font-family: "Poppins-Medium", Helvetica;
     font-weight: 500;
 }
 
-/* ===== SECTION 2 (Collapsible) ===== */
+
 .collapsible-content{
   position: relative;
   width: 100%;
@@ -221,8 +219,6 @@ font-family: "Poppins-Medium", Helvetica;
   background: #ffffff;
   overflow: hidden;
 }
-
-/* giữ group như container nội dung */
 .collapsible-content .group{
   position: absolute;
   top: 76px;
@@ -231,7 +227,6 @@ font-family: "Poppins-Medium", Helvetica;
   height: 851px;
 }
 
-/* ảnh bên phải giữ nguyên */
 .collapsible-content .rectangle{
   position: absolute;
   top: 0;
@@ -252,8 +247,8 @@ font-family: "Poppins-Medium", Helvetica;
   border-radius: 20px;
 }
 
-/* ===== TEXT LEFT (giống figma) ===== */
-.collapsible-content .text-wrapper-3{ /* CONSTRUCTION */
+
+.collapsible-content .text-wrapper-3{ 
   position: absolute;
   top: 0;
   left: 0;
@@ -264,11 +259,11 @@ font-family: "Poppins-Medium", Helvetica;
   color: rgba(64,44,34,0.55);
 }
 
-.collapsible-content .p{ /* Title */
+.collapsible-content .p{ 
   position: absolute;
   top: 34px;
   left: 0;
-  width: 520px;              /* để ra đúng 2 dòng như figma */
+  width: 520px;              
   margin: 0;
 
   font-family: "Optima-Regular", Helvetica;
@@ -279,11 +274,10 @@ font-family: "Poppins-Medium", Helvetica;
   color: #402c22;
 }
 
-/* đoạn mô tả */
+
 .collapsible-content .the-thayer-s-seat{
   position: absolute;
-  top: 220px;               /* nằm dưới title */
- 
+  top: 220px;               
   width: 420px;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -292,10 +286,10 @@ font-family: "Poppins-Medium", Helvetica;
   color: rgba(64,44,34,0.75);
 }
 
-/* ===== “Cushion” đang mở (title + desc) ===== */
-.collapsible-content .group-3{ /* Cushion (open) */
+
+.collapsible-content .group-3{
   position: absolute;
-  top: 185px;               /* nằm giữa title và desc */
+  top: 185px;               
   left: 0;
   width: 452px;
   height: auto;
@@ -312,7 +306,7 @@ font-family: "Poppins-Medium", Helvetica;
  
 }
 
-/* icon minus bên phải */
+
 .collapsible-content .element-minus{
   position: absolute;
   top: 2px;
@@ -321,7 +315,7 @@ font-family: "Poppins-Medium", Helvetica;
   height: 14px;
 }
 
-/* ===== LIST 3 dòng giống figma ===== */
+
 .collapsible-content .group-2,
 .collapsible-content .group-4,
 .collapsible-content .group-5{
@@ -333,12 +327,12 @@ font-family: "Poppins-Medium", Helvetica;
   align-items: center;
   justify-content: space-between;
   padding: 0 6px 0 0;
-  border-top: 1px solid #ececec;   /* line mảnh như figma */
+  border-top: 1px solid #ececec;   
 }
 
-.collapsible-content .group-2{ top: 290px; } /* Upholstery */
-.collapsible-content .group-4{ top: 334px; } /* Frame */
-.collapsible-content .group-5{ top: 378px; border-bottom: 1px solid #ececec; } /* Finish */
+.collapsible-content .group-2{ top: 290px; } 
+.collapsible-content .group-4{ top: 334px; } 
+.collapsible-content .group-5{ top: 378px; border-bottom: 1px solid #ececec; } 
 
 .collapsible-content .group-2 .text-wrapper,
 .collapsible-content .group-4 .text-wrapper,
@@ -351,7 +345,6 @@ font-family: "Poppins-Medium", Helvetica;
   color: #402c22;
 }
 
-/* icon plus bên phải */
 .collapsible-content .element-plus,
 .collapsible-content .element-px-plus{
   position: static;
@@ -362,7 +355,7 @@ font-family: "Poppins-Medium", Helvetica;
   opacity: 0.7;
 }
 
-/* bỏ 3 divider svg cũ */
+
 .collapsible-content .divider,
 .collapsible-content .div,
 .collapsible-content .divider-2{
@@ -642,15 +635,12 @@ color: #462b20;
     padding: 0 16px;
   }
 
-  /* ======================
-     SECTION 1 (Featured)
-     ====================== */
+
   .section-featured{
     min-height: auto;
     padding: 16px 0 24px;
   }
 
-  /* bỏ absolute desktop -> chuyển relative stacking */
   .section-featured .feature-left,
   .section-featured .feature,
   .section-featured .collection{
@@ -660,7 +650,6 @@ color: #462b20;
     width: 100%;
   }
 
-  /* card 1: bike */
   .section-featured .feature-left{
     height: 380px;
     border-radius: 20px;
@@ -675,7 +664,7 @@ color: #462b20;
   }
 
   .section-featured .mask-group{
-    width: 280px;                 /* đúng kiểu figma mobile */
+    width: 280px;                 
     bottom: 10px;
   }
 
@@ -697,7 +686,6 @@ color: #462b20;
     width: auto;
   }
 
-  /* card 2: we want to share (mobile = list dọc) */
   .section-featured .feature{
     height: auto;
     border-radius: 20px;
@@ -716,7 +704,6 @@ color: #462b20;
     margin: 6px 0 14px;
   }
 
-  /* đổi 3 group thành list dọc */
   .section-featured .group,
   .section-featured .group-2,
   .section-featured .group-3{
@@ -743,7 +730,7 @@ color: #462b20;
     line-height: 1.3;
   }
 
-  /* divider ngang giữa các item */
+  
   .section-featured .line,
   .section-featured .img{
     position: relative;
@@ -754,12 +741,9 @@ color: #462b20;
     background: #e9e9e9;
     display: block;
   }
-
-  /* chèn divider sau item 1 và 2: dùng margin để giống figma */
   .section-featured .line{ margin: 0; }
   .section-featured .img{ margin: 0; }
 
-  /* card 3: ảnh + nút shop all giữa */
   .section-featured .collection{
     height: 220px;
     border-radius: 20px;
@@ -770,7 +754,6 @@ color: #462b20;
     top: 52%;
   }
 
-  /* nút mobile trong figma là màu xanh */
   .section-featured .button-inverse{
     width: 128px;
     height: 40px;
@@ -779,9 +762,7 @@ color: #462b20;
     font-size: 14px;
   }
 
-  /* ======================
-     SECTION 2 (Construction)
-     ====================== */
+
   .collapsible-content{
     height: auto;
     padding: 24px 0 28px;
@@ -795,7 +776,6 @@ color: #462b20;
     height: auto;
   }
 
-  /* TEXT */
   .collapsible-content .text-wrapper-3{
     position: relative;
     top: auto;
@@ -815,7 +795,6 @@ color: #462b20;
     margin-bottom: 12px;
   }
 
-  /* ảnh ghế 1 (to) */
   .collapsible-content .rectangle{
     position: relative;
     top: auto;
@@ -826,7 +805,6 @@ color: #462b20;
     
   }
 
-  /* ảnh ghế 2 (nhỏ) */
   .collapsible-content .img{
     position: relative;
     top: auto;
@@ -837,7 +815,7 @@ color: #462b20;
    
   }
 
-  /* Cushion + minus */
+
   .collapsible-content .group-3{
     position: relative;
     top: auto;
@@ -865,7 +843,6 @@ color: #462b20;
     font-size: 13px;
   }
 
-  /* list 3 dòng */
   .collapsible-content .group-2,
   .collapsible-content .group-4,
   .collapsible-content .group-5{
@@ -882,9 +859,6 @@ color: #462b20;
     border-bottom: 1px solid #ededed;
   }
 
-  /* ======================
-     SECTION 3 (Highlight in package)
-     ====================== */
   .section-collapsible{
     height: auto;
     padding: 28px 0 40px;
@@ -901,7 +875,7 @@ color: #462b20;
 
   .section-collapsible .divider,
   .section-collapsible .line-wrapper{
-    display: none; /* mobile figma không cần 2 line dài hai bên */
+    display: none; 
   }
 
   .section-collapsible .div{
@@ -933,7 +907,6 @@ color: #462b20;
     max-width: 340px;
   }
 
-  /* 4 ảnh trang trí: ẩn ở mobile giống cảm giác figma frame */
   .section-collapsible .rectangle,
   .section-collapsible .rectangle-2,
   .section-collapsible .rectangle-3,
