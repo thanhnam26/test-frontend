@@ -385,7 +385,6 @@ font-family: "Poppins-Medium", Helvetica;
   text-align: center !important;
   z-index: 5 !important;
 }
-/* 2) Hai line hai bên cân đối theo lề 96px */
 .section-collapsible .divider,
 .section-collapsible .line-wrapper{
   position: absolute !important;
@@ -406,7 +405,7 @@ font-family: "Poppins-Medium", Helvetica;
   left: auto !important;
 }
 
-/* bỏ mọi offset lệch */
+
 .section-collapsible .divider .line,
 .section-collapsible .line-wrapper .line{
   position: relative !important;
@@ -416,20 +415,22 @@ font-family: "Poppins-Medium", Helvetica;
   display: block !important;
 }
 
-/* 3) Căn giữa block content chính */
+
 .section-collapsible > .div{
   position: absolute !important;
   top: 144px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
 
-  width: 636px !important;  /* đúng theo layout bạn đang dùng calc(50% - 318px) */
+  width: 636px !important;  
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   gap: 56px !important;
   z-index: 3 !important;
 }
+
+
 .section-collapsible .text-wrapper {
     position: relative;
     width: fit-content;
@@ -909,58 +910,83 @@ color: #462b20;
     border-bottom: 1px solid #ededed;
   }
 
+  /* =========================
+   SECTION 3 - MOBILE FIX (OVERRIDE ALL)
+   ========================= */
+@media (max-width: 430px){
+
   .section-collapsible{
-    height: auto;
-    padding: 28px 0 40px;
+    position: relative !important;
+    height: auto !important;
+    padding: 24px 16px 40px !important;
+    overflow: hidden !important;
   }
 
+  /* header line + text */
   .section-collapsible .frame{
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 12px;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-bottom: 12px !important;
   }
 
   .section-collapsible .divider,
   .section-collapsible .line-wrapper{
-    display: none; 
+    display: none !important; /* mobile figma của bạn đã hide */
   }
 
-  .section-collapsible .div{
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    gap: 34px;
+  /* content stack */
+  .section-collapsible > .div{
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 28px !important;
+    z-index: 2 !important;
   }
 
+  /* title không được nowrap, giảm size */
   .section-collapsible .text-wrapper-2{
-    font-size: 34px;
-    line-height: 1.1;
-    white-space: normal;
-    text-align: center;
+    font-size: 34px !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+    text-align: center !important;
   }
 
+  /* tab row cho xuống dòng */
   .section-collapsible .frame-4,
   .section-collapsible .frame-6{
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 10px;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    row-gap: 10px !important;
   }
 
   .section-collapsible .p,
   .section-collapsible .text-wrapper-5,
   .section-collapsible .text-wrapper-6{
-    width: 100%;
-    max-width: 340px;
+    width: 100% !important;
+    max-width: 340px !important;
+    text-align: center !important;
   }
 
+  /* QUAN TRỌNG: tắt toàn bộ ảnh absolute trang trí trên mobile */
   .section-collapsible .rectangle,
   .section-collapsible .rectangle-2,
   .section-collapsible .rectangle-3,
   .section-collapsible .rectangle-4{
-    display: none;
+    display: none !important;
   }
 }
