@@ -35,7 +35,7 @@ a {
 
 
 .section-featured .feature-left {
-    position: absolute;
+    position: relative;
     top: 35px;
     left: 164px;
     width: 782px;
@@ -58,7 +58,7 @@ a {
 }
 
 .section-featured .SPACIAL-FEATURE {
-    position: absolute;
+    position: relative;
 top: 40px;
 left: 40px;
 opacity: 0.4;
@@ -72,8 +72,8 @@ white-space: nowrap;
 }
 
 .section-featured .text-wrapper {
-   position: absolute;
-top: 640px;
+   position: relative;
+top: 600px;
 left: 40px;
 font-family: "Poppins-Medium", Helvetica;
 font-weight: 500;
@@ -85,8 +85,8 @@ white-space: nowrap;
 }
 
 .section-featured .title {
-    position: absolute;
-top: 750px;
+    position: relative;
+top: 730px;
 left: 35px;
 width: 538px;
 font-family: "Poppins-Medium", Helvetica;
@@ -111,8 +111,8 @@ line-height: 24px;
 }
 
 .section-featured .we-want-to-share {
-    position: absolute;
-    top: 60px;
+    position: relative;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 400px;
@@ -157,15 +157,16 @@ font-family: "Poppins-Medium", Helvetica;
 
 .section-featured .line,
 .section-featured .img {
-    position: absolute;
-    top: 200px;
+    position: relative;
+    top: 80px;
+   
     width: 1px;
     height: 100px;
     background: #e5e5e5;
 }
 
-.section-featured .line { left: 290px; }
-.section-featured .img { left: 500px; }
+.section-featured .line { left: 245px; }
+.section-featured .img { left: 450px; }
 
 
 .section-featured .collection {
@@ -220,7 +221,7 @@ font-family: "Poppins-Medium", Helvetica;
   overflow: hidden;
 }
 .collapsible-content .group{
-  position: absolute;
+  position: relative;
   top: 76px;
   left: 59px;
   width: 1934px;
@@ -228,28 +229,28 @@ font-family: "Poppins-Medium", Helvetica;
 }
 
 .collapsible-content .rectangle{
-  position: absolute;
+  position: relative;
   top: 0;
   left: 597px;
   width: 764px;
   height: 851px;
   object-fit: cover;
-  border-radius: 20px;
+  
 }
 
 .collapsible-content .img{
   position: absolute;
-  top: 0;
+  top: 10;
   left: 1377px;
   width: 484px;
   height: 551px;
   object-fit: cover;
-  border-radius: 20px;
+  
 }
 
 
 .collapsible-content .text-wrapper-3{ 
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   font-family: "Poppins", sans-serif;
@@ -260,8 +261,8 @@ font-family: "Poppins-Medium", Helvetica;
 }
 
 .collapsible-content .p{ 
-  position: absolute;
-  top: 34px;
+  position: relative;
+  top: 30px;
   left: 0;
   width: 520px;              
   margin: 0;
@@ -276,10 +277,10 @@ font-family: "Poppins-Medium", Helvetica;
 
 
 .collapsible-content .the-thayer-s-seat{
-  position: absolute;
-  top: 220px;               
+  position: relative;            
   width: 420px;
   margin: 0;
+ 
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   line-height: 1.6;
@@ -289,7 +290,7 @@ font-family: "Poppins-Medium", Helvetica;
 
 .collapsible-content .group-3{
   position: absolute;
-  top: 185px;               
+  top: 200px;               
   left: 0;
   width: 452px;
   height: auto;
